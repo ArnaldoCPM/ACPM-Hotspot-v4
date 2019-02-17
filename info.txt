@@ -1,0 +1,2 @@
+Esta aplicación se basa en los comandos cmd de Windows, por este motivo algunos mensajes pueden referirse al simbolo de sistema.
+ES DE SUMA IMPORTANCIA SABER TAMBIÉN QUE PARA QUE LA APLICACIÓN PUEDA FUNCIONAR, SE DEBE EJECUTARLO CON PRIVILEGIOS DE ADMINISTRADOR
