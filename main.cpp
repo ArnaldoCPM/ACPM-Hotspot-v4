@@ -125,7 +125,7 @@ int main (){
 					printf("--------------------------------------\n");
 					printf("\n   SSID:         %s\n   Contrase%ca:   %s\n", nombre_w, 164, contrasena_w);
 					printf("\nOb.: Los datos mostrados arriba corresponden a un archivo guardado por este \n"
-						   "programa, esto quiere decir si cambiaste la configuracion en otro programa, los "
+						   "programa. Esto quiere decir, si cambiaste la configuracion en otro programa, los "
 					 	   "datos de arriba no serian correctos. Sin embargo, los datos que se mostrar%cn \n"
 						   "abajo ser%cn actuales de la red hospeda.\n\n", 160, 160);
 				}
@@ -159,7 +159,7 @@ int inicio(void){
 	printf("\n  *--------------------------------------------------------------------------*");
 	printf("\n  | Este es un sencillo programa que te ayuda a administrar la red hospedada |\n" 
 		     "  | de tu equipo. Para realizar una accion, presione las flechas (%c%c) o      |\n" 
-		     "  | ingrese el numero o letra (en otro caso), que le corresponde a la accion |\n"
+		     "  | ingrese el numero o letra (en otro caso) que corresponda a la accion |\n"
 		     "  | deseada.                                                                 |\n"
 		     "  *--------------------------------------------------------------------------*\n", 24, 25);
 		
@@ -180,7 +180,7 @@ int inicio(void){
 		printf("%c",opcion);
 		return (opcion);	 
 	}
-	else if(opcion == 224){		//Si si introdujo flechas
+	else if(opcion == 224){		//Si se introdujo flechas
 		opcion = getch();
 		if (opcion == 80 && c_c < 5){	//80 fleja abajo
 			c_c++;
@@ -212,7 +212,7 @@ int inicio(void){
 }
 
 
-/*************** Pide confirmación para continuar **************************/
+/*************** Pide confirmaciÃ³n para continuar **************************/
 void confirmar(int opc){
 	do{
 		if(opc != '3' && opc != '4'){
@@ -235,13 +235,13 @@ void confirmar(int opc){
 }
 
 
-/************* Verifica si se ingresó del 1 hasta 5 ************************/
+/************* Verifica si se ingresÃ³ del 1 hasta 5 ************************/
 bool EsOpcion(int opc){
 	return (opc >= 49 && opc <= 53);
 }
 
 
-/****** Cuenta la cantidad de caracteres introducidos para la contraseña ******/
+/****** Cuenta la cantidad de caracteres introducidos para la contraseÃ±a ******/
 bool ver_contrasena(char contrasena[64]){
 	int i; 
 	for(i=0; i<=64 && (contrasena[i] != '\0'); i++);
